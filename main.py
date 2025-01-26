@@ -87,11 +87,6 @@ class TrackerWrapper:
         return success, self.box
 
     def is_static(self):
-        """
-        Проверяет, стоит ли трекер на месте слишком долго.
-        :param max_static_frames: Максимальное количество кадров без движения
-        :return: True, если трекер стоит на месте, иначе False
-        """
         return self.static_frames >= MAX_STATIC_FRAMES
 
     def is_active(self):
