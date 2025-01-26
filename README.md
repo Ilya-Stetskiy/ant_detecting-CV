@@ -35,6 +35,9 @@
 pip install opencv-python numpy
 ```
 
+Видео, использованное при работе, под которые подстроены все настройки, можно найти по ссылке
+
+`https://drive.google.com/file/d/13pu38VXQlUCoZK4I-rwebVcPFw7Juidc/view?usp=sharing`
 ---
 
 ## Конфигурация
@@ -145,12 +148,6 @@ CIRCLE_RADIUS = 180
 
 ## Запуск программы
 
-Для запуска программы используйте следующую команду:
-
-```bash
-python main.py -v path/to/input_video.mp4 -o output_video.mp4
-```
-
 ### Аргументы командной строки:
 
 - `-v` или `--video`: Путь к входному видеофайлу.
@@ -187,7 +184,7 @@ python main.py -v path/to/input_video.mp4 -o output_video.mp4
 1. Запустите программу с видеофайлом:
 
    ```bash
-   python main.py -v input.mp4 -o output.mp4 --show
+   python main.py -v input_video.mkv -o output.mp4 --show
    ```
 
 2. После завершения обработки:
