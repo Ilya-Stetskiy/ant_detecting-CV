@@ -34,7 +34,9 @@
 ```bash
 pip install opencv-python numpy
 ```
+
 Видео, использованное при работе, под которые подстроены все настройки, можно найти по ссылке
+
 `https://drive.google.com/file/d/13pu38VXQlUCoZK4I-rwebVcPFw7Juidc/view?usp=sharing`
 ---
 
