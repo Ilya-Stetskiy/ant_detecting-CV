@@ -14,7 +14,6 @@ config.read('config.txt')
 # Парсинг констант
 FRAME_START = int(config['VideoProcessing']['FRAME_START'])
 FRAME_END = float(config['VideoProcessing']['FRAME_END']) if config['VideoProcessing']['FRAME_END'] != 'inf' else float('inf')
-FRAME_PRINT_STEP = int(config['VideoProcessing']['FRAME_PRINT_STEP'])
 
 COLOR_THRESHOLD = int(config['AntColorsCount']['COLOR_THRESHOLD'])
 
@@ -30,13 +29,10 @@ MIN_WIDTH = int(config['AntDetection']['MIN_WIDTH'])
 MAX_WIDTH = int(config['AntDetection']['MAX_WIDTH'])
 MIN_HEIGHT = int(config['AntDetection']['MIN_HEIGHT'])
 MAX_HEIGHT = int(config['AntDetection']['MAX_HEIGHT'])
-MAX_AREA = int(config['AntDetection']['MAX_AREA'])
 
-MIN_TRACKER_DARK_COUNT = int(config['TrackerSettings']['MIN_TRACKER_DARK_COUNT'])
-MAX_TRACKER_DARK_COUNT = int(config['TrackerSettings']['MAX_TRACKER_DARK_COUNT'])
+
 MAX_MISSED_FRAMES = int(config['TrackerSettings']['MAX_MISSED_FRAMES'])
 MAX_STATIC_FRAMES = int(config['TrackerSettings']['MAX_STATIC_FRAMES'])
-MIN_POINTS_FOR_HISTORY = int(config['TrackerSettings']['MIN_POINTS_FOR_HISTORY'])
 MEETING_DISTANCE = int(config['TrackerSettings']['MEETING_DISTANCE'])
 
 BLUR_KERNEL_SIZE = tuple(map(int, config['FramePreprocessing']['BLUR_KERNEL_SIZE'].split(',')))
